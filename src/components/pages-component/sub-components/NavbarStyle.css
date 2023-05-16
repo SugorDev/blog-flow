@@ -25,9 +25,16 @@
 
 .nav-section{
     background-color: #12151C !important;
+    position: relative !important;
+}
+
+.navbar-brand{
+    color: white !important;
 }
 
 .nav-btn{
+    color: white !important;
+    background: none !important;
     border: none;
     font-size: 1.5rem;
 }

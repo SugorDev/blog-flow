@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './NavbarStyle.css';
 
 export default function Navbar(){
     return (
         <>
             <nav className="nav-section navbar bg-body-tertiary fixed-top">
                 <div className="container-fluid w-75">
-                    <Link className='nav-link navbar-brand fs-1' to={'/blog-flow'}>BlogFlow</Link>
+                    <Link className='nav-link navbar-brand fs-1' to={'/blog-flow'}>Bf</Link>
 
                     <button className="nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <i className="fa-solid fa-bars"></i>
