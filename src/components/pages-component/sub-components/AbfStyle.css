@@ -1,0 +1,62 @@
+
+
+.abf-section{
+    background-color: #12151c;
+    color: white;
+}
+
+
+.socmed-icons{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socmed-icons li{
+    display: flex;
+    align-items: center;
+}
+
+.socmed-icons li a{
+    text-decoration: none;
+}
+
+.socmed-icons i{
+    color: white;
+    font-size: 2rem;
+    transition: 0.5s ease;
+}
+
+.socmed-icons i:hover{
+    color: #c44143;
+    animation: socmedRotate 0.5s ease;
+}
+
+.abf-section h5{
+    width: 50%;
+    text-align: center;
+    border-top: 1px solid #c3c3c37a;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+@keyframes socmedRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(400deg);
+    }
+    50%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

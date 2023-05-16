@@ -1,28 +1,4 @@
 
-
-.socmed-icons{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.socmed-icons li{
-    display: flex;
-    align-items: center;
-}
-
-.socmed-icons li a{
-    text-decoration: none;
-}
-
-.socmed-icons i{
-    font-size: 1.5rem;
-}
-
 .nav-section{
     background-color: #12151C !important;
     position: relative !important;

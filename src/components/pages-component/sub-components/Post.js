@@ -8,6 +8,9 @@ export default function Post(props){
       <div className='post-card-thumbnail' style={{'backgroundImage': `url(${props.thumbnail})`}}></div>
       <h2>{props.title}</h2>
       <p>{props.content}</p>
+      <div className='category-container'>
+        <p>{props.category}</p>
+      </div>
     </div>
   );
 }
