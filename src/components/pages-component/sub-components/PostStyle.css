@@ -18,7 +18,6 @@
 .post-card {
     width: 320px;
     height:  480px;
-    overflow: hidden;
     padding: 20px;
     color: #12151c !important;
     transition: 0.5s ease;
@@ -218,8 +217,55 @@
     }
 }
 
-  
-  
-  
-  
+
+.category-section, .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    gap: 1rem;
+}
+
+.category-link, .page-btn{
+    position: relative;
+    border: 0;
+}
+
+.category-link::after, .page-btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0) scaleY(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c44143;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.category-link:hover::after, .page-btn:hover::after{
+    transform: scaleX(1) scaleY(-2);
+    transform-origin: bottom left;
+}
+
+.category-active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1) scaleY(-2);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c44143;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease;
+}
+
+
+.pagination{
+    margin-bottom: 2.5rem;
+}
   

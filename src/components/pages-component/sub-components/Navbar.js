@@ -23,16 +23,16 @@ export default function Navbar(){
                                     <Link className='nav-link' to={'/blog-flow'}>Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className='nav-link' to={'/blog-flow'}>Explore</Link>
+                                    <Link className='nav-link' to={'/explore'}>Explore</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className='nav-link' to={'/blog-flow'}>About Us</Link>
+                                    <Link className='nav-link' to={'/about-us'}>About Us</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className='nav-link' to={'/blog-flow'}>Contacts</Link>
+                                    <Link className='nav-link' to={'/contacts'}>Contacts</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className='nav-link' to={'/blog-flow'}>Advertise</Link>
+                                    <Link className='nav-link' to={'/blog-'}>Advertise</Link>
                                 </li>
                             </ul>
                         </div>
