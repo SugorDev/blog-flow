@@ -1,4 +1,6 @@
-.recent-post-section {
+
+
+.post-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,8 +31,6 @@
     height: 200px;
     max-height: 400px;
     transition: 0.3s ease;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
     
     @media (max-width: 980px) {
       height: 150px;
@@ -44,6 +44,10 @@
 
 .post-card > h2{
     margin-top: 1rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .post-card > p{
