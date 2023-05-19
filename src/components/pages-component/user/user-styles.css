@@ -1,0 +1,120 @@
+
+.login-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #12151C;
+    background-color: #12151C;
+}
+
+.login-container{
+    display: flex;
+    justify-content: space-between;
+    width: 820px;
+    height: 620px;
+    border-radius: 1rem;
+}
+
+.login-container h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.login-container h1 span{
+    font-size: 4rem;
+    color: #c44143;
+}
+
+.signup-text{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.login-container form{
+    display: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-container .mb-3{
+    text-align: left !important;
+}
+
+.login-container input{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: 1px solid #12151c92;
+}
+
+.login-container input:focus{
+    box-shadow: 0 0px 10px #c44143;
+    border: 1px solid #c44143;
+}
+
+.login-container button{
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border: 0;
+    background: linear-gradient(90deg, #c44143 0%, #182848 100%);
+    transition: 0.5s ease;
+}
+
+.login-container button:hover{
+    border: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.left-side{
+    padding: 2rem;
+    width: 50%;
+    background: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 2.2rem;
+}
+
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(335deg, #182848 0%, #c44143 100%);
+    width: 50%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 2.2rem;
+    font-size: 2.2rem;
+    color: white;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+    
+@media (max-width: 840px) {
+   .left-side{
+        padding: 5rem;
+        width: 100%;
+   }
+   
+   .right-side{
+        display: none;
+   }
+
+   .login-container{
+        margin: 3rem;
+   }
+}
+

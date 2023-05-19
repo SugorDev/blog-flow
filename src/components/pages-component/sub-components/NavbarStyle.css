@@ -6,23 +6,59 @@
 
 .navbar-brand{
     color: white !important;
-}
-
-.nav-btn{
-    color: white !important;
-    background: none !important;
-    border: none;
+    font-weight: 700 !important;
     font-size: 1.5rem;
 }
 
-.nav-btn i{
+.navbar-brand span{
+    color: #c44143 !important;
+    font-size: 2rem;
+}
+
+.nav-item{
+    background: none !important;
+    border: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white !important;
+    margin-left: 1rem;
+}
+
+.nav-item a{
     transition: 0.3s ease;
 }
 
-.nav-btn:hover i{
+.nav-item:hover a{
     color: #c44143 !important;
 }
 
-.nav-link{
-    text-decoration: none !important;
+
+.nav-right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-toggler i{
+    color: white !important;
+}
+
+.nav-right-section a{
+    color: white;
+    border: 0;
+    background-color: transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-right-section a:hover{
+    cursor: pointer;
+    color: #c44143;
+}
+
+.home-user-btn{
+    font-size: 2rem;
 }

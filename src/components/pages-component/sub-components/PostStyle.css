@@ -6,7 +6,7 @@
     align-items: center;
     flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
-    padding: 5rem;
+    padding: 3.5rem;
     /* Additional styles as needed */
   
     @media (max-width: 980px) {
@@ -16,30 +16,62 @@
 }
   
 .post-card {
+    position: relative;
     width: 320px;
-    height:  480px;
+    height:  580px;
     padding: 20px;
     color: #12151c !important;
     transition: 0.5s ease;
 }
   
 .post-card-thumbnail {
-    background-size: cover;
+    position: relative;
+    background-size: 150%;
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 300px;
     max-height: 400px;
     transition: 0.3s ease;
+    color: white;
+    padding-top: 5rem;
+    padding-left: 7rem;
+    font-size: 5rem;
     
     @media (max-width: 980px) {
-      height: 150px;
+        height: 150px;
+        max-height: 200px;
     }
 }
 
+
 .post-card-thumbnail:hover {
+    background-size: 164%;
     cursor: pointer;
     filter: brightness(50%);
 }
+
+.post-card span{
+    position: absolute;
+    display: none;
+    top: 28%;
+    left: 50%;
+    font-size: 3.5rem;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+
+    @media (max-width: 980px) {
+        top: 15%;
+        left: 50%;
+        font-size: 3.5rem;
+    }
+}
+
+.post-card:hover span{
+    display: block;
+    pointer-events: none;
+}
+
 
 .post-card > h2{
     margin-top: 1rem;
@@ -70,6 +102,18 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
+}
+
+.post-section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.post-section-title p{
+    font-weight: 100 !important;
+    font-size: 2rem;
 }
 
 /*=======================================*/
@@ -226,6 +270,12 @@
     margin-top: 2rem;
     font-size: 1.3rem;
     gap: 1rem;
+
+    @media (max-width: 980px) {
+        font-size: 0.9rem;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+    }
 }
 
 .category-link, .page-btn{
@@ -264,6 +314,36 @@
     transition: transform 0.25s ease;
 }
 
+.create-post-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-left: 14rem;
+    padding-right: 14rem;
+
+    @media (max-width: 980px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+}
+
+.create-post{
+    text-decoration: none;
+    color: white;
+    background-color: #c44143;
+    padding: 0.4rem;
+    border: 2px solid #c44143;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+    margin-top: 2rem;
+}
+
+.create-post:hover{
+    background-color: #c4414300 !important;
+    color: #c44143 !important;
+}
 
 .pagination{
     margin-bottom: 2.5rem;

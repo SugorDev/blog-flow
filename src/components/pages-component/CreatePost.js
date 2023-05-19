@@ -1,6 +1,6 @@
 
 
-export default function BlogPost(){
+export default function CreatePost(){
     return (
         <>
         </>
