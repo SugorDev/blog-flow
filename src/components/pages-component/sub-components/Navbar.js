@@ -31,6 +31,7 @@ export default function Navbar(){
                         <div className="nav-right-section">
                             <div className='home-login-btn'>
                                 <Link to={'/login'}>Login</Link>
+                                <Link to={'/user-profile'} hidden>Name</Link>
                             </div>
                             <div className='home-user-btn'>
                                 <Link to={'/user-profile'}>

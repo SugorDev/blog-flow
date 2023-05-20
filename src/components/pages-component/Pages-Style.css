@@ -1,1 +1,85 @@
 
+
+
+.about-us-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us-section h1{
+    text-align: center;
+    padding: 4rem;
+    font-size: 3.5rem;
+}
+
+.about-us-section h1 > span{
+    font-size: 4.5rem;
+    color: #c44143;
+}
+
+.about-us-section h3{
+    padding: 4rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    font-weight: 400;
+    text-align: center;
+    border-top: 1px solid #12151C;
+    border-bottom: 1px solid #12151C;
+}
+
+.mission-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
+    margin-top: 8rem;
+    color: white;
+    background: linear-gradient(335deg, #182848 0%, #c44143 100%) !important;
+}
+
+.mission-section > h2{
+    font-size: 3rem;
+}
+
+.mission-section > p{
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.offer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
+}
+
+.offer-section h2{
+    font-size: 3rem;
+}
+
+.offer-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.offer-card {
+    color: white;
+    background: linear-gradient(335deg, #182848 0%, #c44143 100%) !important;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 5px #12151C;
+    width: 320px;
+    height: 380px;
+}
+
+.offer-card p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}

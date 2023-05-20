@@ -58,37 +58,59 @@
     padding-left: 1.2rem;
     padding-right: 1.2rem;
     border: 0;
-    background: linear-gradient(90deg, #c44143 0%, #182848 100%);
+    background: #c44143;
     transition: 0.5s ease;
 }
 
 .login-container button:hover{
     border: 0;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: #c441438e;
+}
+
+.signup-btn{
+    font-size: 12px;
+    text-decoration: underline;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    background: none !important;
+    color: rgb(40, 128, 236);
+}
+
+.signup-btn:hover{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.hidden-form{
+    display: none;
 }
 
 .left-side{
-    padding: 2rem;
+    padding: 2.2rem;
     width: 50%;
     background: white;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    padding: 2.2rem;
 }
 
 .right-side{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(335deg, #182848 0%, #c44143 100%);
     width: 50%;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: 2.2rem;
+}
+
+.login-container p{
     font-size: 2.2rem;
     color: white;
 }
+
+
 
 @keyframes gradient-animation {
     0% {
@@ -102,14 +124,64 @@
     }
 }
 
+.shown-side{
+    background-color: white;
+    animation: appear-animate 0.3s ease forwards;
+}
+
+.hidden-side{
+    background: linear-gradient(335deg, #12151C 0%, #c44143 100%) !important;
+}
+
+.slide-right{
+    position: relative;
+    animation: slide-right 0.5s ease forwards;
+}
+
+.slide-left{
+    position: relative;
+    animation: slide-left 0.5s ease forwards;
+}
+
+@keyframes appear-animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0%{
+        opacity: 0;
+        right: 100px;
+    }
+    100%{
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes slide-left {
+    0%{
+        opacity: 0;
+        left: 100px;
+    }
+    100%{
+        opacity: 1;
+        left: 0;
+    }
+}
     
 @media (max-width: 840px) {
-   .left-side{
+   .shown-side{
         padding: 5rem;
         width: 100%;
+        border-radius: 1.2rem;
    }
    
-   .right-side{
+   .hidden-side{
         display: none;
    }
 
