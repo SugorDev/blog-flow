@@ -10,7 +10,7 @@ export default function AboutUs(){
         <>
             <Navbar />
             <div className="about-us-section">
-                <h1>Welcome to Blog<span>F</span>low!</h1>
+                <h1 className="animate__animated animate__flipInX">Welcome to Blog<span>F</span>low!</h1>
                 <h3>At BlogFlow, we believe in the power of storytelling and the impact it can have on individuals and communities. Our platform is designed to empower bloggers and writers of all levels, providing them with the tools and resources they need to bring their ideas to life.</h3>
                 <div className="mission-section">
                     <h2>Our Mission</h2>

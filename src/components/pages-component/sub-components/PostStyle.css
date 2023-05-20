@@ -314,6 +314,37 @@
     transition: transform 0.25s ease;
 }
 
+.explore-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+    font-size: 3rem;
+    color: white;
+    background: linear-gradient(133deg, #182848, #c44143);
+    background-size: 400% 400%;
+
+    -webkit-animation: gradientAnimation 3s ease infinite;
+    -moz-animation: gradientAnimation 3s ease infinite;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@keyframes gradientAnimation {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+
 .create-post-container{
     display: flex;
     justify-content: flex-end;

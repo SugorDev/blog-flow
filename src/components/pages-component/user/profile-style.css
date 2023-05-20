@@ -134,7 +134,7 @@
     width: 320px;
     height: 320px;
     max-height: 400px;
-    transition: 0.3s ease;
+    transition: 0.25s ease;
     color: white;
     padding-top: 5rem;
     padding-left: 7rem;
@@ -146,7 +146,7 @@
 }
 
 .user-post-thumbnail:hover {
-    background-size: 165%;
+    background-size: 160%;
     cursor: pointer;
     filter: brightness(50%);
 

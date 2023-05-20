@@ -9,6 +9,9 @@ export default function Explore() {
   return (
     <>
       <Navbar />
+      <div className='explore-header'>
+        Embark on a Journey of Discovery - Explore the Boundless World of BlogFlow!
+      </div>
       <div className="container-fluid d-flex justify-content-center align-items-center flex-column">
         <MyContextProvider>
           <CategoryNav />

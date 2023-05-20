@@ -8,32 +8,32 @@ export default function CategoryNav() {
         <>
             <ul className="category-section">
                 <li className="category-item">
-                    <button className={`category-link ${selectedCategory === 'All' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('All')}>
+                    <button className={`category-link animate__animated animate__zoomIn ${selectedCategory === 'All' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('All')}>
                         All
                     </button>
                 </li>
                 <li className="category-item">
-                    <button className={`category-link ${selectedCategory === 'Lifestyle' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Lifestyle')}>
+                    <button className={`category-link animate__animated animate__zoomIn ${selectedCategory === 'Lifestyle' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Lifestyle')}>
                         Lifestyle
                     </button>
                 </li>
                 <li className="category-item">
-                    <button className={`category-link ${selectedCategory === 'Fashion' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Fashion')}>
+                    <button className={`category-link animate__animated animate__zoomIn ${selectedCategory === 'Fashion' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Fashion')}>
                         Fashion
                     </button>
                 </li>
                 <li className="category-item">
-                    <button className={`category-link ${selectedCategory === 'Technology' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Technology')}>
+                    <button className={`category-link animate__animated animate__zoomIn ${selectedCategory === 'Technology' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Technology')}>
                         Technology
                     </button>
                 </li>
                 <li className="category-item">
-                    <button className={`category-link ${selectedCategory === 'Travel' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Travel')}>
+                    <button className={`category-link animate__animated animate__zoomIn ${selectedCategory === 'Travel' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Travel')}>
                         Travel
                     </button>
                 </li>
                 <li className="category-item">
-                    <button className={`category-link ${selectedCategory === 'Health' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Health')}>
+                    <button className={`category-link animate__animated animate__zoomIn ${selectedCategory === 'Health' ? 'category-active' : ''}`} onClick={() => setSelectedCategory('Health')}>
                         Health
                     </button>
                 </li>

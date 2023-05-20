@@ -12,7 +12,7 @@ export default function FeaturePosts(props){
 
     return (
         <div className='feature-section'>
-            <div className="feature-post-container">
+            <div className="feature-post-container animate__animated animate__fadeIn">
                 <div className="feature-post-column">
                     <Link to={'/blog-flow'} className="feature-post-link">
                         <img className="feature-post-item" src={images[1]} alt="feature-post-1" />

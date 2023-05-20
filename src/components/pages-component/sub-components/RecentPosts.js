@@ -15,7 +15,7 @@ const RecentPosts = () => {
       </div>
       <div className="post-section">
         {posts.map((post, index) => (
-          <Post key={index} title={post.title} content={post.content} category={post.category} thumbnail={post.thumbnail} />
+          <Post key={index} title={post.title} content={post.content} category={post.category} thumbnail={post.thumbnail}/>
         ))}
       </div>
     </>
