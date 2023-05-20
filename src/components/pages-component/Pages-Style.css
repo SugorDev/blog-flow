@@ -37,7 +37,28 @@
     padding: 8rem;
     margin-top: 8rem;
     color: white;
-    background: linear-gradient(335deg, #182848 0%, #c44143 100%) !important;
+    background: linear-gradient(133deg, #182848, #c44143);
+    background-size: 400% 400%;
+
+    -webkit-animation: gradientAnimation 3s ease infinite;
+    -moz-animation: gradientAnimation 3s ease infinite;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@keyframes gradientAnimation {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
 }
 
 .mission-section > h2{
@@ -70,7 +91,7 @@
   
 .offer-card {
     color: white;
-    background: linear-gradient(335deg, #182848 0%, #c44143 100%) !important;
+    background: linear-gradient(233deg, #182848 0%, #c44143 100%);
     padding: 1.5rem;
     margin: 2rem;
     border-radius: 1rem;
@@ -79,7 +100,45 @@
     height: 380px;
 }
 
+.offer-card:hover{
+    width: 350px;
+    height: 400px;
+    margin: 1rem;
+}
+
 .offer-card p{
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.join-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7rem;
+}
+
+.join-section h2{
+    margin: 2rem;
+}
+
+.join-section p{
+    text-align: center;
+}
+
+.join-btn{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #c44143;
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+.join-btn:hover{
+    color: white !important;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }

@@ -2,7 +2,7 @@ import AboutBlogFlow from "./sub-components/AboutBlogFlow";
 import Navbar from "./sub-components/Navbar";
 import "./Pages-Style.css";
 import 'animate.css';
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 export default function AboutUs(){
@@ -38,7 +38,12 @@ export default function AboutUs(){
                             <p>Support and Learning Resources:</p> We're here to support you every step of the way. Access our knowledge base, attend webinars, and connect with our dedicated support team for any questions or assistance you may need.
                         </div>
                     </div>
-                    
+                </div>
+                <div className="join-section">
+                    <h2>Join the BlogFlow Community</h2>
+                    <p>Whether you're a seasoned blogger or just starting out on your writing journey, BlogFlow welcomes you. Sign up today and become part of our growing community of passionate bloggers. Together, let's inspire, learn, and create a world of captivating stories.</p>
+                    <Link className="join-btn" to={'/login'}>Join Us</Link>
+                    <h5>Start your blogging adventure with BlogFlow and let your voice be heard!</h5>
                 </div>
             </div>
             <AboutBlogFlow />
