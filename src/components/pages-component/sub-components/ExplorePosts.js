@@ -51,7 +51,7 @@ export default function Explore() {
 
       {filteredPosts.length > postsPerPage && (
         <div className="pagination">
-          <button><i className="fa-solid fa-angle-left"></i></button>
+          <button className='angle-btn' onClick={() => paginate(currentPage - 1)}><i className="fa-solid fa-angle-left"></i></button>
 
           {Array(Math.ceil(filteredPosts.length / postsPerPage))
             .fill()
@@ -65,7 +65,7 @@ export default function Explore() {
               </button>
           ))}
 
-          <button><i className="fa-solid fa-angle-right"></i></button>
+          <button className='angle-btn' onClick={() => paginate(currentPage + 1)}><i className="fa-solid fa-angle-right"></i></button>
         </div>
       )}
     </>

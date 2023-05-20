@@ -98,6 +98,7 @@
     box-shadow: 1px 3px 5px #12151C;
     width: 320px;
     height: 380px;
+    transition: 0.25s ease;
 }
 
 .offer-card:hover{
@@ -129,7 +130,9 @@
 
 .join-btn{
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: #c44143;
     text-decoration: none;
     color: white;

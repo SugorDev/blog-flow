@@ -27,6 +27,11 @@
     color: #c44143;
 }
 
+.backhome{
+    text-decoration: none !important;
+    color: #12151C !important;
+}
+
 .signup-text{
     margin-top: 3rem;
     text-align: center;

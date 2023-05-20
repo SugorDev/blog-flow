@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import './user-styles.css';
-
+import './login-styles.css';
 
 export default function Login(){
     const [ signing, setSigning ] = useState(false);
@@ -14,8 +13,9 @@ export default function Login(){
         <>
             <div className="login-section">
                 <div className="login-container">
+                    {/* login section */}
                     <div className={signing ? 'left-side hidden-side' : 'left-side shown-side'}>
-                        <form action='/blog-flow' className={signing ? 'hidden-form' : ''}>
+                        <form action='/user-profile' className={signing ? 'hidden-form' : ''}>
                             <h1>Blog<span>F</span>low</h1>
                             <div className="mb-3">
                                 <label for="user-email-address" className="form-label">Email address</label>
@@ -38,8 +38,10 @@ export default function Login(){
                         </form>
                         <p className={signing ? 'slide-right' : 'hidden-form'}>Join the vibrant community of bloggers on BlogFlow - Sign up today and embark on your journey of sharing stories and ideas!</p>
                     </div>
+
+                    {/* signup section */}
                     <div className={signing ? 'right-side shown-side' : 'right-side hidden-side'}>
-                        <form action='/blog-flow' className={signing ? '' : 'hidden-form'}>
+                        <form action='/user-profile' className={signing ? '' : 'hidden-form'}>
                             <h1>Sign Up</h1>
                             <div className="mb-3">
                                 <label for="new-user-first-name" className="form-label">First Name</label>

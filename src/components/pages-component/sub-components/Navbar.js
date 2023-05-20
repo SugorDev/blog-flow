@@ -24,9 +24,6 @@ export default function Navbar(){
                                 <li className="nav-item">
                                     <Link to={'/contacts'}>Contacts</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link to={'/blog-flow'}>Advertise</Link>
-                                </li>
                         </ul>
                         <div className="nav-right-section">
                             <div className='home-login-btn'>

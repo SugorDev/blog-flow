@@ -15,7 +15,7 @@ export default function FeaturePosts(props){
             <div className="feature-post-container">
                 <div className="feature-post-column">
                     <Link to={'/blog-flow'} className="feature-post-link">
-                        <img className="feature-post-item" src={images[1]} alt="Image 2" />
+                        <img className="feature-post-item" src={images[1]} alt="feature-post-1" />
                         <div className='feature-content'>
                             <h2>Title Feature Post 1</h2>
                             <p>Lorem lorem lorem lore, lolol lo lo. Lorem ipsum lore ip sum sum.</p>
@@ -24,14 +24,14 @@ export default function FeaturePosts(props){
                 </div>
                 <div className="feature-post-column">
                     <Link to={'/blog-flow'} className="feature-post-link">
-                        <img className="feature-post-item" src={images[1]} alt="Image 2" />
+                        <img className="feature-post-item" src={images[1]} alt="feature-post-2" />
                         <div className='feature-content small-content'>
                             <h2>Title Feature Post 1</h2>
                             <p>Lorem lorem lorem lore, lolol lo lo. Lorem ipsum lore ip sum sum.</p>
                         </div>
                     </Link>
                     <Link className='last-feature feature-post-link' to={'/blog-flow'}>
-                        <img className="feature-post-item" src={images[2]} alt="Image 2" />
+                        <img className="feature-post-item" src={images[2]} alt="feature-post-3" />
                         <div className='feature-content small-content'>
                             <h2>Title Feature Post 1</h2>
                             <p>Lorem lorem lorem lore, lolol lo lo. Lorem ipsum lore ip sum sum.</p>
