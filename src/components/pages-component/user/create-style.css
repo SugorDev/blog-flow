@@ -1,0 +1,12 @@
+
+
+
+.create-form input, .create-form textarea, .create-form select{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: 1px solid #12151c3a;
+}
+
+.create-form input:focus, .create-form textarea:focus, .create-form select:focus{
+    box-shadow: 0 0px 14px #12151c3a;
+    border: 1px solid #12151c3a;
+}

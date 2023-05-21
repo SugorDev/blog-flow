@@ -1,13 +1,18 @@
-import { useState } from 'react';
 import './login-styles.css';
+import { useContext, useState } from 'react';
+import { LoggedContext } from '../../../context/LogContext';
 
 export default function Login(){
     const [ signing, setSigning ] = useState(false);
+    const [ setLoggedIn ] = useContext(LoggedContext);
 
     function setSigningOption(){
         setSigning(signing => !signing);
     }
 
+    function setLogStatus(){
+        setLoggedIn(true);
+    }
 
     return (
         <>
@@ -30,7 +35,7 @@ export default function Login(){
                                 <input type="checkbox" className="form-check-input" id="rememberCheck"/>
                                 <label className="form-check-label" for="rememberCheck">Remember Me</label>
                             </div>
-                            <button type="submit" className="btn btn-primary">Login</button>
+                            <button type="submit" className="btn btn-primary" onClick={setLogStatus}>Login</button>
                             <div className='signup-text'>
                                 Don't have an account?
                                 <button className='signup-btn' onClick={setSigningOption} type="reset">Sign Up</button>

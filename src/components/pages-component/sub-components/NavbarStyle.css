@@ -61,4 +61,21 @@
 
 .home-user-btn{
     font-size: 2rem;
+    list-style-type: none;
+}
+
+.home-user-btn:hover{
+    color: #c44143;
+}
+
+.nav-user-icon{
+    color: white;
+}
+
+.home-user-btn li a{
+    color: #12151C !important;
+}
+
+.home-user-btn li a:hover{
+    color: #c44143 !important;
 }
