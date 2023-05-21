@@ -320,7 +320,9 @@
     align-items: center;
     padding: 7rem;
     font-size: 3rem;
+    text-align: center;
     color: white;
+    transition: 0.3s ease;
     background: linear-gradient(133deg, #182848, #c44143);
     background-size: 400% 400%;
 

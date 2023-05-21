@@ -39,7 +39,7 @@ export default function Explore() {
 
   return (
     <>
-      <div className="post-section">
+      <div className="post-section animate__animated animate__fadeIn animate__delay-1s">
         {currentPosts.length > 0 ? (
           currentPosts.map((post, index) => (
             <Post key={index} title={post.title} content={post.content} category={post.category} thumbnail={post.thumbnail} />

@@ -93,6 +93,9 @@
 }
 
 .left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2.2rem;
     width: 50%;
     background: white;

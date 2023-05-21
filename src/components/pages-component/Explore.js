@@ -15,7 +15,7 @@ export default function Explore() {
       <div className="container-fluid d-flex justify-content-center align-items-center flex-column">
         <MyContextProvider>
           <CategoryNav />
-          <div className='create-post-container'>
+          <div className='create-post-container animate__animated animate__zoomIn'>
             <Link className='create-post' to={'/create-post'}>
               Create Post
             </Link>

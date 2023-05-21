@@ -27,8 +27,8 @@ export default function Login(){
                                 <input type="password" className="form-control" id="user-password" required/>
                             </div>
                             <div className="mb-3 form-check remember-btn">
-                                <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                                <label className="form-check-label" for="exampleCheck1">Remember Me</label>
+                                <input type="checkbox" className="form-check-input" id="rememberCheck"/>
+                                <label className="form-check-label" for="rememberCheck">Remember Me</label>
                             </div>
                             <button type="submit" className="btn btn-primary">Login</button>
                             <div className='signup-text'>
@@ -58,8 +58,8 @@ export default function Login(){
                                 <input type="password" className="form-control" id="new-user-password" required/>
                             </div>
                             <div className="mb-3 form-check remember-btn">
-                                <input type="checkbox" className="form-check-input" id="exampleCheck1" required/>
-                                <label className="form-check-label" for="exampleCheck1">I accept Terms & Conditions</label>
+                                <input type="checkbox" className="form-check-input" id="termsCheck" required/>
+                                <label className="form-check-label" for="termsCheck">I accept Terms & Conditions</label>
                             </div>
                             <button type="submit" className="btn btn-primary">Join Us</button>
                             <div className='signup-text'>
