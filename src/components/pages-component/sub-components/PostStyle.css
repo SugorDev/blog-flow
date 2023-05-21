@@ -150,22 +150,27 @@
 
 .feature-content {
     position: absolute;
-    top: 75%;
+    top: 60%;
     left: 35%;
     transform: translate(-50%, -50%);
     color: white;
-    padding: 20px;
+    padding: 18px;
 }
 
 .feature-content h2 {
     font-size: 24px;
-    margin-bottom: 8px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .feature-content p {
-    font-size: 16px;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .small-content h2 {

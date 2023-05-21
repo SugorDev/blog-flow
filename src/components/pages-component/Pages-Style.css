@@ -145,3 +145,25 @@
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
+
+
+.contact-form input, .contact-form textarea{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: 1px solid #12151C;
+}
+
+
+
+.send-contact{
+    padding: 0.75rem;
+    border: 0;
+    background: #c44143;
+    border: 2px solid #c44143;
+    color: white;
+    border-radius: 5rem;
+}
+
+.send-contact:hover{
+    background: white;
+    color: #c44143;
+}

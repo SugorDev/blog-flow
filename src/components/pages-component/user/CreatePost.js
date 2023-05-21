@@ -31,7 +31,6 @@ export default function CreatePost(){
                     <div className="mb-3">
                         <label for="form-blog-photo" className="form-label">Blog Thumbnail</label>
                         <input type="file" className="form-control" id="form-blog-photo" required/>
-                        
                     </div>
                     <div className="mb-3">
                         <label for="form-blog-content" className="form-label">What is the Blog about?</label>

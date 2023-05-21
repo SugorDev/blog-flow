@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/pages-component/Home";
 import Explore from './components/pages-component/Explore';
 import CreatePost from './components/pages-component/user/CreatePost';
+import Contacts from './components/pages-component/Contacts';
 
 import Login from './components/pages-component/user/Login';
 import AboutUs from './components/pages-component/AboutUs';
@@ -17,6 +18,7 @@ function App() {
             <Route path='/blog-flow' element={<Home />}/>
             <Route path='/explore' element={<Explore />}/>
             <Route path='/about-us' element={<AboutUs />}/>
+            <Route path='/contacts' element={<Contacts />}/>
             {/* User Routes */}
             <Route path='/login' element={<Login />}/>
             <Route path='/user-profile' element={<UserProfile />}/>

@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
 import './NavbarStyle.css';
-import { useContext } from 'react';
-import LoggedProvider, { LoggedContext } from '../../../context/LogContext';
 
 export default function Navbar(){
     
     return (
         <>
-            <LoggedProvider>
                 <nav className="nav-section navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid w-75">
                         <Link className='navbar-brand' to={'/blog-flow'}>Blog<span>F</span>low</Link>
@@ -57,7 +54,6 @@ export default function Navbar(){
                         </div>
                     </div>
                 </nav>
-            </LoggedProvider>
         </>
     );
 }
