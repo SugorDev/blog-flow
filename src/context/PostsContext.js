@@ -4,15 +4,21 @@ export const MyContext = createContext();
 
 export default function MyContextProvider({ children }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedSettings, setSelectedSettings] = useState('Profile');
   const [loggedIn, setLoggedIn] = useState(true);
 
+  const updateLoggedInStatus = (status) => {
+    setLoggedIn(status);
+  };
+
   return (
-    <MyContext.Provider value={
-        { 
-          selectedCategory, setSelectedCategory,
-          loggedIn, setLoggedIn
-        }
-    }>
+    <MyContext.Provider
+      value={{
+        selectedCategory, setSelectedCategory,
+        loggedIn, setLoggedIn, // Use the defined function here
+        selectedSettings, setSelectedSettings
+      }}
+    >
       {children}
     </MyContext.Provider>
   );

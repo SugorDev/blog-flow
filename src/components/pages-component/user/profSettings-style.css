@@ -1,0 +1,36 @@
+
+.settings-section ul{
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 2rem;
+
+}
+
+.settings-section{
+    padding: 5rem;
+
+    @media (max-width: 840px) {
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+
+.settings-category{
+    width: 30%;
+    @media (max-width: 840px) {
+        width: 100%;
+    }
+}
+
+.settings-category button{
+    text-align: start;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.settings-body{
+    width: 70%;
+    @media (max-width: 840px) {
+        width: 100%;
+    }
+}

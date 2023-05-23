@@ -9,9 +9,17 @@
 .create-post-section{
     margin-top: 7.5rem;
     margin-left: 7.5rem;
-    margin-right: 7.5rem;
     padding-right: 25rem;
     margin-bottom: 15rem;
+
+    @media (max-width: 990px) {
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
 }
 
 .create-form > div{
@@ -25,5 +33,16 @@
     padding-right: 2rem;
     color: white;
     border: 1px solid #c44143;
+    border-radius: 3rem;
     background-color: #c44143;
+}
+
+.thumbnail-preview{
+    width: 50%;
+    height: 50%;
+}
+
+#form-blog-content{
+    height: 340px;
+    margin-bottom: 5rem;
 }

@@ -8,6 +8,7 @@ import Contacts from './components/pages-component/Contacts';
 import Login from './components/pages-component/user/Login';
 import AboutUs from './components/pages-component/AboutUs';
 import UserProfile from './components/pages-component/user/Profile';
+import ProfileSettings from './components/pages-component/user/ProfileSettings';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             {/* User Routes */}
             <Route path='/login' element={<Login />}/>
             <Route path='/user-profile' element={<UserProfile />}/>
+            <Route path='/user-settings' element={<ProfileSettings />}/>
             <Route path='/create-post' element={<CreatePost />}/>          
         </Routes>
       </BrowserRouter>
