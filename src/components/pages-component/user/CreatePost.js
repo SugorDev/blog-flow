@@ -59,7 +59,7 @@ export default function CreatePost(){
                             id="form-blog-content"
                         />
                     </div>
-                    <div className="input-group mb-3">
+                    <div className="input-group mb-3 w-25">
                         <label className="input-group-text" for="form-blog-tags">Tags</label>
                         <select className="form-select" id="form-blog-tags">
                             <option value="Lifestyle">Lifestyle</option>

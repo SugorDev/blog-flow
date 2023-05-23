@@ -7,10 +7,6 @@ export default function MyContextProvider({ children }) {
   const [selectedSettings, setSelectedSettings] = useState('Profile');
   const [loggedIn, setLoggedIn] = useState(true);
 
-  const updateLoggedInStatus = (status) => {
-    setLoggedIn(status);
-  };
-
   return (
     <MyContext.Provider
       value={{

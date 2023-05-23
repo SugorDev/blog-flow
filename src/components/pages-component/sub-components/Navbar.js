@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
 import './NavbarStyle.css';
-import MyContextProvider, { MyContext } from '../../../context/PostsContext';
+import { Link } from 'react-router-dom';
+import MyContextProvider from '../../../context/PostsContext';
+import NavbarUtil from './NavbarUtil';
 
 export default function Navbar(){
 
@@ -28,36 +29,8 @@ export default function Navbar(){
                                     </li>
                             </ul>
                             <MyContextProvider>
-                                    <MyContext.Consumer>
-                                    {({ loggedIn }) => (
-                                        <div className="nav-right-section">
-                                            <div className='home-login-btn'>
-                                                <Link to={'/login'} hidden={loggedIn}>Login</Link>
-                                                <Link to={'/user-profile'} hidden={!loggedIn}>Name</Link>
-                                            </div>
-                                            <div className='home-user-btn' hidden={!loggedIn}>
-                                                <div className="dropdown">
-                                                    <div className="nav-user-icon nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i className="fa-regular fa-circle-user"></i>
-                                                    </div>
-                                                    <ul className="dropdown-menu">
-                                                        <li>
-                                                            <Link className="dropdown-item" to={'/user-profile'}>Profile</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="dropdown-item" to={'/user-settings'}>Settings</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="dropdown-item" to={'/login'}>Logout</Link>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </MyContext.Consumer>
+                                <NavbarUtil />
                             </MyContextProvider>
-
                         </div>
                     </div>
                 </nav>

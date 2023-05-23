@@ -11,9 +11,6 @@ export default function ProfileSettingsNav() {
                     <button className={`settings-link animate__animated animate__fadeIn ${selectedSettings === 'All' ? 'settings-active' : ''}`} onClick={() => setSelectedSettings('Profile')}>Profile</button>
                 </li>
                 <li>
-                    <button className={`settings-link animate__animated animate__fadeIn ${selectedSettings === 'All' ? 'settings-active' : ''}`} onClick={() => setSelectedSettings('UserSecurity')}>User & Security</button>
-                </li>
-                <li>
                     <button className={`settings-link animate__animated animate__fadeIn ${selectedSettings === 'All' ? 'settings-active' : ''}`} onClick={() => setSelectedSettings('TermsConditions')}>Terms & Conditions</button>
                 </li>
             </ul>

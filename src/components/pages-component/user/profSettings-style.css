@@ -1,7 +1,6 @@
 
 .settings-section ul{
     list-style-type: none;
-    border: 1px solid black;
     padding: 2rem;
 
 }
@@ -9,15 +8,15 @@
 .settings-section{
     padding: 5rem;
 
-    @media (max-width: 840px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         padding: 2rem;
     }
 }
 
 .settings-category{
-    width: 30%;
-    @media (max-width: 840px) {
+    width: 15%;
+    @media (max-width: 1000px) {
         width: 100%;
     }
 }
@@ -29,8 +28,124 @@
 }
 
 .settings-body{
-    width: 70%;
-    @media (max-width: 840px) {
+    width: 85%;
+    @media (max-width: 1000px) {
         width: 100%;
     }
+}
+
+.terms-conditions h5{
+    margin-top: 2rem;
+}
+
+.user-profile-display{
+    width: 100%;
+}
+
+.user-profile-display form{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile-display .mb-3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+.body-list label{
+    font-weight: 600;
+}
+
+.profile-container{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    box-shadow: 0px 1px 5px #752a2b;
+}
+
+.profile-photo-preview{
+    z-index: -1 !important;
+    width: 240px;
+    height: 240px;
+    margin: 0 !important;
+    padding: 0;
+    position: absolute;
+    border: 4px solid rgb(3, 6, 19);
+}
+
+.user-profile-display .settings-link{
+    border: 0 !important;
+    border: 1px solid rgb(3, 6, 19);
+}
+
+.change-photo{
+    z-index: 2;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+    font-size: 5rem;
+    border: 4px solid #752a2b;
+    color: #752a2b;
+    width: 240px;
+    height: 240px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.change-photo:hover{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.change-photo p{
+    font-size: 1rem;
+}
+
+#user-display-name{
+    box-shadow: 0px 1px 5px #752a2b;
+    border: 0 !important;
+    padding: 0.25rem;
+}
+
+#user-bio-content{
+    width: 100% !important;
+    border-radius: 0.5rem;
+    resize: none;
+    border: 0 !important;
+    padding: 1rem;
+    box-shadow: 0px 1px 5px #752a2b;
+}
+
+.user-social-links{
+    padding-left: 0 !important;
+    width: 100%;
+    border: 0 !important;
+
+}
+
+.user-social-links li label{
+    margin-right: 1rem;
+}
+
+.user-social-links li input{
+    box-shadow: 0px 1px 5px #752a2b;
+    border: 0 !important;
+}
+
+.user-save-changes{
+    border: 1px solid #752a2b;
+    background-color: #752a2b;
+    color: white;
+    border-radius: 3rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-self: center !important;
+    justify-self: center !important;
 }
