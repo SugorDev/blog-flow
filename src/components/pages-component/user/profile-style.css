@@ -65,14 +65,14 @@
     width: 30%;
     height: 100%;
     padding: 2rem;
-    border-image: linear-gradient(180deg, #ff000000 0%,#2d2e2e3e 27%,#2d2e2e3e 57%, #ff000000 100%) 1;
-    border-style: solid;
-    border-bottom: 0;
-    border-top: 0;
-    border-left: 0;
+    border-image: linear-gradient(180deg, #ff000000 0%,#2d2e2e3e 27%,#2d2e2e3e 57%, #ff000000 100%) 1 !important;
+    border-style: solid !important;
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
 
     @media (max-width: 840px) {
-        border: 0;
+        border: 0 !important;
     }
 }
 
