@@ -22,18 +22,19 @@ function App() {
           <Route path='/contacts' element={<Contacts />} />
           {/* User Routes */}
           <Route path='/login' element={<Login />} />
-          <Route path='/user-profile' element={<UserProfile />} />
+          <Route path='/blog-flow/user-profile' element={<UserProfile />} />
           <Route path='/user-settings' element={<ProfileSettings />} />
           <Route path='/create-post' element={<CreatePost />} />
 
           <Route
-            path="/:author/:title"
+            path="/blog-flow/:author/:title"
             element={
               <Blog
                 blogTitle="Sample Blog Title"
-                blogThumbnail="sample-thumbnail.jpg"
+                blogThumbnail="https://javelina.co/wp-content/uploads/2017/03/bigstock-Blog-Blogging-Homepage-Social-134171063-3.jpg"
                 blogContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                blogAuthor="John Doe"
+                blogAuthorName="John Doe"
+                blogAuthorImg="https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
               />}
           />
 

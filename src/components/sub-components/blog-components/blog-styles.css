@@ -1,0 +1,121 @@
+
+.blog-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem;
+    flex-direction: column;
+}
+
+.blog-container{
+    align-self: center;
+    text-align: center;
+}
+
+.blog-title{
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.blog-thumbnail{
+    width: 75vw;
+    height: 60vh;
+    background-position: center;
+
+    @media (max-width: 1000px) {
+        height: 40vh;
+    }    
+}
+
+.blog-content{
+    text-align: start;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.blog-author{
+    font-size: 2rem;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #12151c37;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.blog-author-img{
+    width: 120px;
+    height: 120px;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 100%;
+    margin-right: 4rem;
+}
+
+.blog-comment-list-container{
+    margin: 3rem;
+    margin-top: 5rem;
+    padding: 4rem;
+}
+
+
+.blog-comment{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(-180deg, rgba(2,0,36,0) 0%, rgba(0,226,255,0.2) 100%);
+}
+
+.blog-comment-author-container{
+    display: flex;
+    align-items: center;    
+}
+
+.blog-comment-author-container > section{
+    display: flex;
+    flex-direction: column; 
+}
+
+.blog-comment-author-img{
+    width: 120px;
+    height: 120px;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 100%;
+    margin-right: 4rem;
+}
+
+.blog-comment-date{
+    font-weight: bold;
+}
+
+.form-blog-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    border-top: 2px solid #12151c37;
+}
+
+.form-blog-comment textarea{
+    resize: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.form-blog-comment button{
+    border-radius: 10px;
+    width: 120px;
+    padding: 0.5rem;
+    background: #c44143;
+    border: 1px solid #c44143;
+    color:  white;
+    align-self: flex-end;
+}

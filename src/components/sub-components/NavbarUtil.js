@@ -4,7 +4,7 @@ import { MyContext } from "../../context/PostsContext";
 
 
 
-export default function NavbarUtil() {
+export default function NavbarUtil(props) {
     const { loggedIn, setLoggedIn } = useContext(MyContext);
     
     function setLogout(e){
@@ -25,7 +25,7 @@ export default function NavbarUtil() {
                         </div>
                         <ul className="dropdown-menu">
                             <li>
-                                <Link className="dropdown-item" to={'/user-profile'}>Profile</Link>
+                                <Link className="dropdown-item" to={'/blog-flow/user-profile'}>Profile</Link>
                             </li>
                             <li>
                                 <Link className="dropdown-item" to={'/user-settings'}>Settings</Link>

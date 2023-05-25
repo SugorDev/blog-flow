@@ -4,7 +4,7 @@ import Navbar from '../../sub-components/Navbar';
 import UserPosts from './user-sub-components/UserPosts';
 import AboutBlogFlow from '../../sub-components/AboutBlogFlow';
 
-export default function UserProfile(){
+export default function UserProfile(props){
     const userData = {
             'profile-pic' : 'https://cdn.discordapp.com/attachments/773993070373896284/1079458247003623535/received_535769868498611.jpg',
         }
