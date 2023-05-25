@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { MyContext } from "../../../context/PostsContext";
 import { Link } from "react-router-dom";
+import { MyContext } from "../../context/PostsContext";
 
 
 

@@ -1,5 +1,5 @@
 import MyContextProvider from "../../../context/PostsContext";
-import Navbar from "../sub-components/Navbar";
+import Navbar from "../../sub-components/Navbar";
 import ProfileSettingsBody from "./ProfileSettingsBody";
 import ProfileSettingsNav from "./ProfileSettingsNav";
 import './profSettings-style.css';

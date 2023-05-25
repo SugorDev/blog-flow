@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import './profile-style.css';
-import Navbar from "../sub-components/Navbar";
+import Navbar from '../../sub-components/Navbar';
 import UserPosts from './user-sub-components/UserPosts';
-import AboutBlogFlow from '../sub-components/AboutBlogFlow';
+import AboutBlogFlow from '../../sub-components/AboutBlogFlow';
 
 export default function UserProfile(){
     const userData = {

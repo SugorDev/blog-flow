@@ -1,6 +1,6 @@
 import './PostStyle.css';
 import { useContext } from "react";
-import { MyContext } from "../../../context/PostsContext";
+import { MyContext } from "../../context/PostsContext";
 
 export default function CategoryNav() {
   const { selectedCategory, setSelectedCategory } = useContext(MyContext);

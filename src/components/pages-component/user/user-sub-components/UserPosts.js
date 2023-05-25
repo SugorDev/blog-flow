@@ -10,7 +10,7 @@ export default function UserPosts(){
             {posts.map((post, index) => (
                 <div key={index} className="user-post">
                     <span>{post.title}</span>
-                    <Link to={'/blog-flow'}><div className='user-post-thumbnail' style={{'backgroundImage': `url(${post.thumbnail})`}}></div></Link>
+                    <Link to={`/${post.author}/${post.title}`}><div className='user-post-thumbnail' style={{'backgroundImage': `url(${post.thumbnail})`}}></div></Link>
                 </div>
             ))}
         </>

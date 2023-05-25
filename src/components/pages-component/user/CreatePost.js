@@ -2,8 +2,8 @@ import './create-style.css';
 import 'react-quill/dist/quill.snow.css';
 import React, { useState } from 'react';
 import ReactQuill from 'react-quill';
-import Navbar from "../sub-components/Navbar";
-import AboutBlogFlow from '../sub-components/AboutBlogFlow';
+import Navbar from '../../sub-components/Navbar';
+import AboutBlogFlow from '../../sub-components/AboutBlogFlow';
 
 
 export default function CreatePost(){

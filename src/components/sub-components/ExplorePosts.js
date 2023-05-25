@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Post from './Post';
 import './PostStyle.css';
-import { MyContext } from '../../../context/PostsContext';
+import { MyContext } from '../../context/PostsContext';
 import data from './explore-posts.json';
 
 

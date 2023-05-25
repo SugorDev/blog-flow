@@ -1,6 +1,6 @@
-import Navbar from "./sub-components/Navbar";
 import './Pages-Style.css';
-import AboutBlogFlow from "./sub-components/AboutBlogFlow";
+import Navbar from "../sub-components/Navbar";
+import AboutBlogFlow from "../sub-components/AboutBlogFlow";
 
 export default function Contacts(){
     return (

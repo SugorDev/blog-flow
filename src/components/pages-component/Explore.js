@@ -1,9 +1,9 @@
 import React from 'react';
-import CategoryNav from "./sub-components/CategoryNav";
-import Navbar from "./sub-components/Navbar";
-import ExplorePosts from "./sub-components/ExplorePosts";
-import MyContextProvider from "../../context/PostsContext";
 import { Link } from 'react-router-dom';
+import CategoryNav from '../sub-components/CategoryNav';
+import Navbar from '../sub-components/Navbar';
+import ExplorePosts from "../sub-components/ExplorePosts";
+import MyContextProvider from "../../context/PostsContext";
 
 export default function Explore() {
   return (

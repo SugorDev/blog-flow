@@ -1,6 +1,6 @@
 import './NavbarStyle.css';
 import { Link } from 'react-router-dom';
-import MyContextProvider from '../../../context/PostsContext';
+import MyContextProvider from '../../context/PostsContext';
 import NavbarUtil from './NavbarUtil';
 
 export default function Navbar(){

@@ -1,16 +1,14 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutUs from './components/pages-component/AboutUs';
+import Blog from './components/pages-component/Blog';
 import Home from "./components/pages-component/Home";
+import Contacts from './components/pages-component/Contacts';
 import Explore from './components/pages-component/Explore';
 import CreatePost from './components/pages-component/user/CreatePost';
-import Contacts from './components/pages-component/Contacts';
-
 import Login from './components/pages-component/user/Login';
-import AboutUs from './components/pages-component/AboutUs';
 import UserProfile from './components/pages-component/user/Profile';
 import ProfileSettings from './components/pages-component/user/ProfileSettings';
-import Blog from './components/pages-component/Blog';
-import Post from './components/pages-component/sub-components/Post';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import AboutBlogFlow from "./sub-components/AboutBlogFlow";
-import Navbar from "./sub-components/Navbar";
+import AboutBlogFlow from "../sub-components/AboutBlogFlow";
+import Navbar from "../sub-components/Navbar";
 import "./Pages-Style.css";
 
 

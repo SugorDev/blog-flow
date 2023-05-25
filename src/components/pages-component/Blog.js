@@ -1,4 +1,4 @@
-import Navbar from "./sub-components/Navbar";
+import Navbar from "../sub-components/Navbar";
 
 export default function Blog(props) {
     return (
