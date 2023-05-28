@@ -9,7 +9,6 @@ export default function UserProfile(props){
             'profile-pic' : 'https://cdn.discordapp.com/attachments/773993070373896284/1079458247003623535/received_535769868498611.jpg',
         }
     
-    
     return (
         <>
             <Navbar />
@@ -18,9 +17,10 @@ export default function UserProfile(props){
                 <div className='profile-header d-flex justify-content-center align-items-center'>
                     <div className='user-display d-flex justify-content-center align-items-center flex-column'>
                         <div className='user-pic animate__animated animate__fadeIn animate__delay-1s' style={{'backgroundImage': `url(${userData['profile-pic']})`}}></div>
-                        <p className='user-name animate__animated animate__fadeInLeft animate__delay-1s'>Your Name</p>
+                        <p className='user-name animate__animated animate__fadeInLeft animate__delay-1s'>{props.userName}</p>
                     </div>
                     <div className='user-bio animate__animated animate__fadeIn animate__delay-2s'>
+                        {props.profileDesc}
                         Hi there! I'm [Your Name], a passionate blogger and storyteller with a love for sharing inspiring content with the world. I believe that every person has a unique story to tell, and through my blog, I aim to create a space where those stories can be celebrated.
                     </div>
                 </div>
@@ -30,19 +30,19 @@ export default function UserProfile(props){
                             <ul>
                                 <li>
                                     <i className="fa-brands fa-facebook"></i>
-                                    <Link>John Doe</Link>
+                                    <Link>{props.socialFacebook}</Link>
                                 </li>
                                 <li>
                                     <i className="fa-brands fa-instagram"></i>
-                                    <Link>@_itsmejohndoe</Link>
+                                    <Link>@{props.socialInstagram}</Link>
                                 </li>
                                 <li>
                                     <i className="fa-brands fa-twitter"></i>
-                                    <Link>@johndoe</Link>
+                                    <Link>@{props.socialTwitter}</Link>
                                 </li>
                                 <li>
                                     <i className="fa-brands fa-youtube"></i>
-                                    <Link>JohnDoeChannel</Link>
+                                    <Link>{props.socialYoutube}</Link>
                                 </li>
                             </ul>
                         </div>

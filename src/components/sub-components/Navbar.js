@@ -19,13 +19,13 @@ export default function Navbar(){
                                         <Link to={'/blog-flow'}>Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to={'/explore'}>Explore</Link>
+                                        <Link to={'/blog-flow/explore'}>Explore</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to={'/about-us'}>About Us</Link>
+                                        <Link to={'/blog-flow/about-us'}>About Us</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to={'/contacts'}>Contacts</Link>
+                                        <Link to={'/blog-flow/contacts'}>Contacts</Link>
                                     </li>
                             </ul>
                             <MyContextProvider>

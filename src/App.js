@@ -17,9 +17,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/blog-flow' element={<Home />} />
-          <Route path='/explore' element={<Explore />} />
-          <Route path='/about-us' element={<AboutUs />} />
-          <Route path='/contacts' element={<Contacts />} />
+          <Route path='/blog-flow/explore' element={<Explore />} />
+          <Route path='/blog-flow/about-us' element={<AboutUs />} />
+          <Route path='/blog-flow/contacts' element={<Contacts />} />
           {/* User Routes */}
           <Route path='/login' element={<Login />} />
           <Route path='/blog-flow/user-profile' element={<UserProfile />} />
