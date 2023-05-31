@@ -37,7 +37,7 @@ export default function NavbarUtil(props) {
             <div className="nav-right-section">
                 <div className='home-login-btn'>
                     <Link to={'/login'} hidden={token}>Login</Link>
-                    <Link to={'/user-profile'} hidden={!token}>{user && user.name}</Link>
+                    <Link to={'/blog-flow/user-profile'} hidden={!token}>{user && user.name}</Link>
                 </div>
                 <div className='home-user-btn' hidden={!token}>
                     <div className="dropdown">

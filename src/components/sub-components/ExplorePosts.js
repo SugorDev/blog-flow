@@ -2,39 +2,42 @@ import React, { useContext, useState, useEffect } from 'react';
 import Post from './Post';
 import './PostStyle.css';
 import { MyContext } from '../../context/PostsContext';
-import data from './explore-posts.json';
-
 
 export default function Explore() {
   const { selectedCategory } = useContext(MyContext);
 
-  const { posts } = data;
-
+  const [filteredPosts, setFilteredPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 12;
   const [currentPosts, setCurrentPosts] = useState([]);
 
-  // Filter the posts based on the selected category
-  const filteredPosts = selectedCategory === 'All' ? posts : posts.filter(post => post.category === selectedCategory);
+  useEffect(() => {
+    fetchPosts(); // Fetch posts when the component mounts or when selectedCategory changes
+  }, [selectedCategory]);
+
+  const fetchPosts = async () => {
+    try {
+      const response = await fetch('http://127.0.0.1:8000/api/post-list');
+      const data = await response.json();
+      setFilteredPosts(data.posts); // Assuming data.posts is the array of posts from the API response
+    } catch (error) {
+      console.error('Error fetching posts:', error);
+    }
+  };
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedCategory, setCurrentPage]);
-  
+  }, [selectedCategory]);
+
   useEffect(() => {
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const slicedPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
     setCurrentPosts(slicedPosts);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filteredPosts, currentPage]);
 
-  // Function to handle pagination
   const paginate = (pageNumber) => {
-    if (currentPage === pageNumber) {
-      return; // Return early if the clicked page is the same as the current page
-    }
-    setCurrentPage((prevPage) => pageNumber);
+    setCurrentPage(pageNumber);
   };
 
   return (
@@ -42,7 +45,13 @@ export default function Explore() {
       <div className="post-section animate__animated animate__fadeIn animate__delay-1s">
         {currentPosts.length > 0 ? (
           currentPosts.map((post, index) => (
-            <Post key={index} title={post.title} content={post.content} category={post.category} thumbnail={post.thumbnail} />
+            <Post
+              key={index}
+              title={post.title}
+              content={post.description}
+              category={post.category}
+              thumbnail={post.thumbnail}
+            />
           ))
         ) : (
           <p>No posts found.</p>
@@ -51,7 +60,13 @@ export default function Explore() {
 
       {filteredPosts.length > postsPerPage && (
         <div className="pagination">
-          <button className='angle-btn' onClick={() => paginate(currentPage - 1)}><i className="fa-solid fa-angle-left"></i></button>
+          <button
+            className="angle-btn"
+            onClick={() => paginate(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            <i className="fa-solid fa-angle-left"></i>
+          </button>
 
           {Array(Math.ceil(filteredPosts.length / postsPerPage))
             .fill()
@@ -63,11 +78,17 @@ export default function Explore() {
               >
                 {index + 1}
               </button>
-          ))}
+            ))}
 
-          <button className='angle-btn' onClick={() => paginate(currentPage + 1)}><i className="fa-solid fa-angle-right"></i></button>
+          <button
+            className="angle-btn"
+            onClick={() => paginate(currentPage + 1)}
+            disabled={currentPage === Math.ceil(filteredPosts.length / postsPerPage)}
+          >
+            <i className="fa-solid fa-angle-right"></i>
+          </button>
         </div>
       )}
     </>
   );
-};
+}
